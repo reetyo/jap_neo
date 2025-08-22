@@ -127,3 +127,33 @@
 .action-buttons .ant-btn-primary[ant-click-animating-without-extra-node]:after {
   border-radius: 15px;
 }
+
+
+@media (max-width: 768px) {
+  .word-display h1 {
+    font-size: 3em;
+  }
+
+  .options-container .ant-radio-button-wrapper {
+    height: 60px !important;
+    min-width: 80px;
+    padding: 0 10px !important;
+  }
+
+  .options-container .ant-radio-button-wrapper .ant-radio-button-label {
+    font-size: 2em !important;
+  }
+
+  .action-buttons .ant-btn {
+    height: 50px;
+    font-size: 1.2em;
+  }
+
+  .word-page-container {
+    padding: 10px;
+  }
+
+  .word-display {
+    margin: 30px 0;
+  }
+}

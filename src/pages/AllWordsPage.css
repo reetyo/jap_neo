@@ -11,6 +11,8 @@
 .all-words-list-container {
   max-height: 70vh;
   overflow-y: auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .lesson-header {
@@ -29,7 +31,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 32%;
+  padding: 15px 20%;
   border-bottom: 1px solid #f0f0f0;
   transition: background-color 0.3s;
   width: 100%;

@@ -1,3 +1,12 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+}
+
 .home-container .ant-btn {
   height: 60px;
   font-size: 1.5em;
