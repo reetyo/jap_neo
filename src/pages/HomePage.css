@@ -1,0 +1,25 @@
+.home-container .ant-btn {
+  height: 60px;
+  font-size: 1.5em;
+  border-radius: 15px;
+  box-shadow: 0 5px 0 #e5e5e5;
+  transition: all 0.2s ease-in-out;
+}
+
+.home-container .ant-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 #e5e5e5;
+}
+
+.home-container .ant-btn-primary {
+  background-color: #58cc02;
+  border-color: #58cc02;
+  box-shadow: 0 5px 0 #4fa802;
+}
+
+.home-container .ant-btn-primary:hover {
+  background-color: #4fa802 !important;
+  border-color: #4fa802 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 #4fa802;
+}

@@ -1,0 +1,129 @@
+.word-page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress-text {
+  font-size: 1.2em;
+  color: #888;
+}
+
+.word-display {
+  margin: 50px 0;
+}
+
+.word-display h1 {
+  font-size: 4em;
+  font-weight: bold;
+  color: #333;
+}
+
+.answer-feedback {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.answer-feedback p {
+  font-size: 1.5em;
+  color: #58cc02;
+  margin: 5px 0;
+}
+
+.options-container {
+  margin-bottom: 40px;
+}
+
+.options-container .ant-radio-button-wrapper {
+  height: 80px !important;
+  min-width: 120px;
+  padding: 0 20px !important;
+  border-radius: 15px !important;
+  border: 2px solid #e5e5e5 !important;
+  box-shadow: 0 5px 0 #e5e5e5 !important;
+  transition: all 0.2s ease-in-out !important;
+  background-color: #fff !important;
+}
+
+.options-container .ant-radio-button-wrapper:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 #d9d9d9 !important;
+}
+
+.options-container .ant-radio-button-wrapper .ant-radio-button-label {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 2.5em !important;
+  color: #333 !important;
+  height: 100%;
+}
+
+.options-container .ant-radio-button-wrapper-checked .ant-radio-button-label {
+  color: white !important;
+}
+
+.options-container .ant-radio-button-wrapper.incorrect-option {
+  animation: incorrect-fade 1.5s ease-in-out;
+}
+
+@keyframes incorrect-fade {
+  0% {
+    background-color: #ff4d4f;
+    border-color: #ff4d4f;
+    color: white;
+  }
+  33% {
+    background-color: #ff4d4f;
+    border-color: #ff4d4f;
+    color: white;
+  }
+  100% {
+    background-color: #fff;
+    border-color: #e5e5e5;
+    color: #333;
+  }
+}
+
+.action-buttons .ant-btn {
+  height: 60px;
+  font-size: 1.5em;
+  border-radius: 15px;
+  margin: 0 10px;
+  box-shadow: 0 5px 0 #e5e5e5;
+  transition: all 0.2s ease-in-out;
+}
+
+.action-buttons .ant-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 #e5e5e5;
+}
+
+.action-buttons .ant-btn-primary.ant-btn-dangerous {
+  background-color: #ff4d4f;
+  border-color: #ff4d4f;
+  box-shadow: 0 5px 0 #cf1322;
+}
+
+.action-buttons .ant-btn-primary.ant-btn-dangerous:hover {
+  background-color: #cf1322;
+  border-color: #cf1322;
+}
+
+.action-buttons .ant-btn-primary.success-button:hover {
+  background-color: #4fa802 !important;
+  border-color: #4fa802 !important;
+}
+
+.options-container .ant-radio-button-wrapper.incorrect-option {
+  background-color: #ff4d4f !important;
+  border-color: #ff4d4f !important;
+  color: white !important;
+}
+
+.action-buttons .ant-btn-primary[ant-click-animating-without-extra-node]:after {
+  border-radius: 15px;
+}

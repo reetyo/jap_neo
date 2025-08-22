@@ -1,0 +1,72 @@
+.mistakes-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.mistakes-list-container {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 10px; /* Add some space for the scrollbar */
+}
+
+.mistake-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.mistake-item:hover {
+  background-color: #f9f9f9;
+}
+
+.word-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.japanese-word {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+.chinese-meaning {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.word-details {
+  flex-shrink: 0;
+  text-align: right;
+  padding-left: 20px;
+}
+
+.word-type {
+  font-size: 0.9em;
+  color: #888;
+}
+
+.reading {
+  font-size: 1em;
+  color: #777;
+}
+
+.ant-list-item {
+  padding: 0 !important;
+}
+
+.mistakes-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
+}
