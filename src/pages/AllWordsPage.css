@@ -11,6 +11,7 @@
 .all-words-list-container {
   max-height: 70vh;
   overflow-y: auto;
+  overflow-x: hidden;
   overscroll-behavior-y: contain;
   max-width: 800px;
   margin: 0 auto;
