@@ -1,12 +1,30 @@
-# React + Vite
+# 标准日本语单词记忆
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+这是一个用于帮助用户 **死记硬背** 《标准日本语》教材中单词的项目。
 
-Currently, two official plugins are available:
+## 特点
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*   **课程选择**：用户可以选择学习特定课程的单词。
+*   **乱序学习**：支持乱序模式，打破单词顺序，增强记忆效果。
+*   **错题回顾**：记录用户答错的单词，方便集中复习。
+*   **单词列表**：提供完整的单词表，方便查阅。
 
-## Expanding the ESLint configuration
+## 使用方法
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1.  **开始学习**：
+    *   点击“开始”按钮，会弹出一个学习设置窗口。
+    *   在设置窗口中，您可以选择要学习的课程。如果不选择，将默认学习所有课程。
+    *   您可以打开“乱序学习”开关，以随机顺序学习单词。
+    *   点击“开始学习”按钮，进入单词学习页面。
+2.  **继续学习**：
+    *   如果您中途退出了学习，可以点击“继续”按钮，从上次学习的地方继续。
+3.  **查看错题**：
+    *   点击“错题表”按钮，可以查看您在学习过程中答错的单词。
+4.  **查看单词表**：
+    *   点击“单词表”按钮，可以查看所有课程的单词。
+
+## 部署
+
+本项目已部署到 GitHub Pages，您可以通过以下链接访问：
+
+[https://reetyo.github.io/jap_neo/](https://reetyo.github.io/jap_neo/)

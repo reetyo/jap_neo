@@ -1,0 +1,178 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  border: 3px solid #e5e5e5;
+}
+
+.modal-content h2 {
+  color: #3c3c3c;
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+
+.modal-content h3 {
+  color: #777777;
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.lesson-selection {
+  margin-bottom: 30px;
+}
+
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 15px;
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+}
+
+.lesson-button {
+  background-color: #ffffff;
+  color: #4caf50;
+  border: 2px solid #4caf50;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px #419a45;
+}
+
+.lesson-button:hover {
+  background-color: #f0fff0;
+}
+
+.lesson-button.selected {
+  background-color: #4caf50;
+  color: #ffffff;
+  box-shadow: 0 4px #388e3c;
+  transform: translateY(2px);
+}
+
+.shuffle-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.shuffle-option h3 {
+  margin: 0 20px 0 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #4caf50;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.start-button, .cancel-button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.start-button {
+  background-color: #58cc02;
+  box-shadow: 0 5px #4aa502;
+}
+
+.start-button:hover {
+  background-color: #62e002;
+}
+
+.start-button:active {
+  box-shadow: 0 2px #4aa502;
+  transform: translateY(3px);
+}
+
+.cancel-button {
+  background-color: #ff4b4b;
+  box-shadow: 0 5px #e04040;
+}
+
+.cancel-button:hover {
+  background-color: #ff6b6b;
+}
+
+.cancel-button:active {
+  box-shadow: 0 2px #e04040;
+  transform: translateY(3px);
+}
