@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, Space } from 'antd';
 import { Link, useNavigate } from 'react-router-dom';
 import './HomePage.css';
@@ -8,7 +8,17 @@ import { lessonMap } from '../lessonMap';
 
 const HomePage = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isSessionInProgress, setIsSessionInProgress] = useState(false);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const sessionWords = localStorage.getItem('wordSessionWords');
+    if (sessionWords) {
+      setIsSessionInProgress(true);
+    } else {
+      setIsSessionInProgress(false);
+    }
+  }, []);
 
   const handleStartNewSessionClick = () => {
     setIsModalVisible(true);
@@ -37,17 +47,19 @@ const HomePage = () => {
     setIsModalVisible(false);
   };
 
+  const handleContinueSession = () => {
+    navigate('/word');
+  };
+
   return (
     <div className="home-container">
       <Space direction="vertical" size="large">
         <Button type="primary" size="large" block onClick={handleStartNewSessionClick}>
           开始
         </Button>
-        <Link to="/word">
-          <Button size="large" block>
-            继续
-          </Button>
-        </Link>
+        <Button size="large" block disabled={!isSessionInProgress} onClick={handleContinueSession}>
+          继续
+        </Button>
         {/* <Link to="/settings">
           <Button size="large" block>
             设置
