@@ -124,3 +124,25 @@
   font-size: 2em;
   color: #333;
 }
+
+.lesson-selector-button {
+  background-color: #58cc02;
+  box-shadow: 0 5px #4aa502;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.lesson-selector-button:hover {
+  background-color: #62e002;
+}
+
+.lesson-selector-button:active {
+  box-shadow: 0 2px #4aa502;
+  transform: translateY(3px);
+}
