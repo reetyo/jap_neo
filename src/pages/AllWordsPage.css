@@ -19,6 +19,7 @@
   border-radius: 10px;
   border: 2px solid #e5e5e5;
   background-color: white;
+  color: #1cb0f6;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -70,7 +71,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20%;
+  padding: 15px;
   border-bottom: 1px solid #f0f0f0;
   transition: background-color 0.3s;
   width: 100%;
